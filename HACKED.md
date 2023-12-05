@@ -16,14 +16,14 @@ This branch is a hacked version of the original repo. It is used to make local s
 
 2. Read the [README.md](./README.md) to get the project up and running
 
-3. Change the default user in the [Development Seeder](database\seeders\DevelopmentSeeder.php#L22) on line 22 to your own user:
+3. Change the default user in the [Development Seeder](database/seeders/DevelopmentSeeder.php#L22) on line 22 to your own user:
     - id = i + student number
     - name = your name
     - email = your school email
     - type = teacher or student (teacher allows you access to the admin panel)
     - credits = the amount of credits you want to have (9999999999999999 is probably enough)
 
-4. Change the approver_id to be your own user id in the [Development Seeder](database\seeders\DevelopmentSeeder.php#L46) on line 46
+4. Change the approver_id to be your own user id in the [Development Seeder](database/seeders/DevelopmentSeeder.php#L46) on line 46
 
 5. Run `php artisan migrate:fresh --seed` to reset the database and seed it with your user
 
