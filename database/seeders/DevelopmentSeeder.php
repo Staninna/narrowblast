@@ -20,16 +20,18 @@ class DevelopmentSeeder extends Seeder
     {
         // Makes development easier if I just add myself to the database
         $user = User::create([
-            'id' => 'tl10',
-            'name' => 'Tim',
-            'email' => 'tl10@curio.nl',
+            'id' => 'i293206',
+            'name' => 'Stan',
+            'email' => 'D293206@edu.rocwb.nl',
             'type' => 'teacher',
-            'credits' => 10000,
+            'credits' => 9999999999999999,
         ]);
 
         // Give the first user all ShopItems
         foreach (\App\Models\ShopItem::all() as $shopItem) {
-            $shopItem->purchaseFor($user);
+            for ($i = 0; $i < 10; $i++) {
+                $shopItem->purchaseFor($user);
+            }
         }
 
         // Seed some of the test slides for the first user
@@ -43,7 +45,7 @@ class DevelopmentSeeder extends Seeder
                 'path' => 'slide-with-js-and-betting.html',
                 'finalized_at' => now(),
                 'approved_at' => now(),
-                'approver_id' => 'tl10',
+                'approver_id' => 'i293206',
             ],
         ];
 
