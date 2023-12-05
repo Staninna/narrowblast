@@ -20,6 +20,13 @@ class ShopItemSeeder extends Seeder
         // Creates the default shop items
         $shopItems = [
             [
+                'name' => 'Custom Slide (onbeperkt)',
+                'description' => 'Presenteer een eigen gemaakte \'slide\' op NarrowBlast! Gebruik HTML en CSS om een webpagina te maken en upload die naar ons platform. Iedereen die langs de NarrowBlast loopt zal jouw slide zien. Jouw slide wordt eerst gecontroleerd alvorens deze wordt getoond.',
+                'image_path' => 'presentation.png',
+                'unique_id' => 'slide_indefinite',
+                'cost_in_credits' => 0,
+            ],
+            [
                 'name' => 'Custom Slide (14 dagen)',
                 'description' => 'Presenteer 14 dagen lang een eigen gemaakte \'slide\' op NarrowBlast! Gebruik HTML en CSS om een webpagina te maken en upload die naar ons platform. Iedereen die langs de NarrowBlast loopt zal jouw slide zien. Jouw slide wordt eerst gecontroleerd alvorens deze wordt getoond.',
                 'image_path' => 'presentation.png',

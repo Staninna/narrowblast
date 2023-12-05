@@ -11,6 +11,7 @@ use App\Models\Slide;
 #[ForShopItem('slide_1d')]
 #[ForShopItem('slide_7d')]
 #[ForShopItem('slide_14d')]
+#[ForShopItem('slide_indefinite')]
 class CustomSlideTime implements ShopItemInterface
 {
     /**
@@ -22,6 +23,7 @@ class CustomSlideTime implements ShopItemInterface
             'slide_1d' => 1 * 24 * 60 * 60,
             'slide_7d' => 7 * 24 * 60 * 60,
             'slide_14d' => 14 * 24 * 60 * 60,
+            'slide_indefinite' => 99999999999999999999,
         };
         $shopItemUser->data['time_used_in_seconds'] = 0;
     }
