@@ -1,5 +1,7 @@
 # SD NarrowBlast
 
+Before you start reading this check out the instructions/notes for this 'hacked' branch in [HACKED.md](./HACKED.md).
+
 With NarrowBlast:
 
 * Our students can create (interactive) slides for narrowcasting using HTML, CSS and optionally JavaScript
