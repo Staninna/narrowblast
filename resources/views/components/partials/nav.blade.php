@@ -4,7 +4,7 @@
             href="{{ url('/') }}">
             <x-logos.light-logo class="w-[50px] sm:w-[100px]"/>
             <h1 class="font-bold text-2xl whitespace-nowrap border-l sm:border-none pl-2">
-                🚀 NarrowBlast
+                🚀 NarrowBlast (HACKED)
             </h1>
         </a>
 
