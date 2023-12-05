@@ -12,6 +12,8 @@ This branch is a hacked version of the original repo. It is used to make local s
 
 ## 🛠 Getting Started
 
+**Note:** these instructions are only correct if you attent Curio in Breda. If you attend a different school good luck figuring it out.
+
 1. Ask a teacher to give you a AMO Client ID and Secret callback URL should be `http://localhost:8000/callback` if running on the default port. If you are running on a different port, change the callback URL accordingly.
 
 2. Read the [README.md](./README.md) to get the project up and running
@@ -19,7 +21,7 @@ This branch is a hacked version of the original repo. It is used to make local s
 3. Change the default user in the [Development Seeder](database/seeders/DevelopmentSeeder.php#L22) on line 22 to your own user:
     - id = i + student number
     - name = your name
-    - email = your school email
+    - email = D + student number + @edu.rocwb.nl
     - type = teacher or student (teacher allows you access to the admin panel)
     - credits = the amount of credits you want to have (9999999999999999 is probably enough)
 
