@@ -5,14 +5,12 @@
         </x-headings.area>
 
         <x-card>
-            <x-stack-layout>
-                <p>
-                    Dit zijn al jouw slides. Je kunt hier nieuwe slides uploaden en bestaande slides verwijderen.
-                </p>
-                <p>
-                    Voordat je een slide kunt activeren in je <x-buttons.link icon="archive-box" href="{{ route('shop.inventory') }}">@lang('app.inventory')</x-buttons.link> moet deze eerst goedgekeurd worden door een docent. Dit kan een paar dagen duren.
-                </p>
-            </x-stack-layout>
+            <p>
+                Dit zijn al jouw slides. Je kunt hier nieuwe slides uploaden en bestaande slides verwijderen.
+            </p>
+            <p>
+                Voordat je een slide kunt activeren in je <x-buttons.link icon="archive-box" href="{{ route('shop.inventory') }}">@lang('app.inventory')</x-buttons.link> moet deze eerst goedgekeurd worden door een docent. Dit kan een paar dagen duren.
+            </p>
         </x-card>
 
         @livewire('slide-switcher')

@@ -36,7 +36,7 @@ class CreditRedeemCode extends Component implements HasForms
                     ->maxLength(255),
             ])
             ->statePath('data')
-            ->columns(3)
+            ->columns(1)
             ->model(Slide::class);
     }
 

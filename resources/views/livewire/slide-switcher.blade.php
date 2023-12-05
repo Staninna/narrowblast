@@ -18,31 +18,30 @@
     </x-filament::tabs>
 
     <x-card x-cloak x-show="$wire.tab == 1">
-        <x-stack-layout>
-            <p>
-                Dit zijn de slides die je hebt geupload, maar nog niet hebt ingediend voor goedkeuring. Je kunt ze alvast bekijken of verwijderen als je wilt. Wanneer je klaar bent met testen kun je ze indienen voor goedkeuring.
-            </p>
-            <p>
-                Op dit moment kun je slides niet bewerken.
-            </p>
-            @livewire('list-slides', ['isApproved' => false, 'isFinalized' => false])
-            <x-buttons.primary href="{{ route('slides.upload') }}">
-                @lang('app.slide_upload')
-            </x-buttons.primary>
-        </x-stack-layout>
+        <p>
+            Dit zijn de slides die je hebt geupload, maar nog niet hebt ingediend voor goedkeuring. Je kunt ze alvast bekijken of verwijderen als je wilt. Wanneer je klaar bent met testen kun je ze indienen voor goedkeuring.
+        </p>
+        <p>
+            Op dit moment kun je slides niet bewerken.
+        </p>
+        @livewire('list-slides', ['isApproved' => false, 'isFinalized' => false])
     </x-card>
 
     <x-card x-cloak x-show="$wire.tab == 2">
-
-        <x-stack-layout>
-            <p>
-                Dit zijn de slides die je hebt ingediend voor goedkeuring. Je kunt ze alvast bekijken of verwijderen als je wilt. Wanneer ze zijn goedgekeurd kun je ze activeren in je <x-buttons.link icon="archive-box" href="{{ route('shop.inventory') }}">@lang('app.inventory')</x-buttons.link>.
-            </p>
-            @livewire('list-slides', ['isApproved' => false])
-        </x-stack-layout>
+        <p>
+            Dit zijn de slides die je hebt ingediend voor goedkeuring. Je kunt ze alvast bekijken of verwijderen als je wilt. Wanneer ze zijn goedgekeurd kun je ze activeren in je <x-buttons.link icon="archive-box" href="{{ route('shop.inventory') }}">@lang('app.inventory')</x-buttons.link>.
+        </p>
+        @livewire('list-slides', ['isApproved' => false])
     </x-card>
 
     <x-card x-cloak x-show="$wire.tab == 3">
+        <p>
+            Deze slides zijn goedgekeurd voor weergave. Je kunt ze activeren in je <x-buttons.link icon="archive-box" href="{{ route('shop.inventory') }}">@lang('app.inventory')</x-buttons.link>.
+        </p>
         @livewire('list-slides', ['isApproved' => true])
     </x-card>
+
+    <x-buttons.primary href="{{ route('slides.upload') }}" big>
+        @lang('app.slide_upload')
+    </x-buttons.primary>
 </div>

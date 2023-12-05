@@ -7,15 +7,13 @@
             </x-headings.area>
 
             <x-card>
-                <x-stack-layout>
-                    <p>
-                        @lang('app.enter_invite_code_explanation')
-                    </p>
-                    <x-inputs.text name="invite_code" label="Invite code" />
-                    <x-buttons.primary submit>
-                        @lang('app.enter_invite_code')
-                    </x-buttons.primary>
-                </x-stack-layout>
+                <p>
+                    @lang('app.enter_invite_code_explanation')
+                </p>
+                <x-inputs.text name="invite_code" label="Invite code" />
+                <x-buttons.primary submit>
+                    @lang('app.enter_invite_code')
+                </x-buttons.primary>
             </x-card>
         </form>
     </div>

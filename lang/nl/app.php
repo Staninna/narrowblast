@@ -3,6 +3,7 @@
 return [
     'admin_panel' => 'Beheerder Paneel',
     'student' => 'student',
+    'updates' => 'Updates',
 
     'credits' => 'credits',
     'shop' => 'Virtuele Winkel',
