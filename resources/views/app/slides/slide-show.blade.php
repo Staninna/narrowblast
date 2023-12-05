@@ -89,7 +89,7 @@
             });
         }
 
-        let secretTickKey = localStorage.getItem('secretTickKey');
+        let secretTickKey = "{{ config('app.slide_show_secret_tick_key') }}";
 
         function setup(secretTickKey) {
             doTick(secretTickKey);
@@ -98,10 +98,7 @@
             }, {{ config('app.slide_show_tick_interval_in_seconds') * 1000 }});
         }
 
-        if (!secretTickKey) {
-            secretTickKey = passwordModal('Please enter the secret tick key (.env: )', setup);
-        } else {
-            setup(secretTickKey);
-        }
+        setup(secretTickKey);
+
     </script>
 </x-common-layout>
