@@ -9,6 +9,7 @@ This branch is a hacked version of the original repo. It is used to make local s
 - All shop items added 10x to your inventory
 - Free indefinite screen time shop item
 - No need to manually type Secret Tick Key
+- Preview slides will have a lifespan of 7 days instead of 1 minute
 
 ## 🛠 Getting Started
 
