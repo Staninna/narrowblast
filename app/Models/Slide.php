@@ -24,7 +24,7 @@ class Slide extends Model
 
     const PREVIEW_STORAGE_DISK = 'user_content';
     const PREVIEW_FILE_DIRECTORY = 'slides-preview';
-    const PREVIEW_LIFETIME_IN_SECONDS = 60;
+    const PREVIEW_LIFETIME_IN_SECONDS = 60 * 60 * 24 * 7; // 7 days
 
     // Only plain HTML files are allowed
     const ACCEPTED_FILE_TYPES = [
